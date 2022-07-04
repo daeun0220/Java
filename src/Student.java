@@ -1,19 +1,19 @@
+import java.util.Arrays;
 public class Student {
-    public static void main(String[] args){
-        Students[] s1 = new Students[5];
-        for(int i=0; i<s1.length; i++){
-            s1[i] = new Students();
-    }
+    public static void main(String[] args) {
+        arr[] students = new arr[5];
+        students[0] = new arr("daeun", 24);
+        students[1] = new arr("ch4jun", 28);
+        students[2] = new arr("p1", 31);
+        students[3] = new arr("p2", 17);
+        students[4] = new arr("p3", 42);
+
+        Arrays.sort(students);
+
 
     }
+
+
 }
 
-class Students{
-    String name;
-    int age;
 
-    Students(String n, int a){  // 생성자
-        name = n;
-        age = a;
-    }
-}

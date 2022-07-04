@@ -1,16 +1,21 @@
-public class arr {
-    public static void main(String[] args){
-        int[] score = {79, 88, 91, 33, 100, 55, 95};
-        int max = score[0];
-        int min = score[0];
+import java.util.Arrays;
+class arr implements Comparable<arr> {
+        public String name;
+        public int age;
 
-        for(int i=1; i<score.length;i++){
-            if(score[i] > max){
-                max = score[i];
-            } else if(score[i] < min){
-                min = score[i];
-            }
-        }System.out.println(max);
-        System.out.println(min);
-    }
+        public arr(){}
+        public arr(String name, int age){
+            this.name = name;
+            this.age = age;
+        }
+        public int compareTo(arr other){
+            return this.age - other.age;
+        }
+
+        public void printstudent(){
+            System.out.println("name: "+ name);
+            System.out.println("age: "+ age);
+        }
+
 }
+
