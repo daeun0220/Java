@@ -1,4 +1,4 @@
-class Tv{
+class Tv1{
     String color;
     boolean power;
     int channel;
@@ -9,8 +9,8 @@ class Tv{
 
 public class studyclass {
     public static void main(String[] args){
-        Tv t = new Tv();
-        Tv[] tvArr = {new Tv(), new Tv(), new Tv()};
+        Tv1 t = new Tv1();
+        Tv1[] tvArr = {new Tv1(), new Tv1(), new Tv1()};
         t.channel = 7;
         t.channelDown();
         System.out.println(t.channel);
