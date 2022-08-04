@@ -13,6 +13,20 @@ class Deck {
     final int CARD_NUM = 52;
     Card cardArr[] = new Card[CARD_NUM];
 
+    public boolean equals(Object obj){
+        if (obj instanceof Deck) {
+            return CARD_NUM == ((Deck)obj).CARD_NUM;
+        }
+        else{
+            return false;
+        }
+    }
+    public String toString() {
+        return "CARD_NUM : " + CARD_NUM;
+    }
+
+
+
     Deck() {
         int i = 0;
         for (int k = Card.KIND_MAX; k > 0; k--) {
